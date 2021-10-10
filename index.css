@@ -1,0 +1,106 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	margin: 0;
+	padding: 0;
+	background: #2980b9; /* fallback for old browsers */
+	background: -webkit-linear-gradient(
+		to right,
+		#ffffff,
+		#6dd5fa,
+		#2980b9
+	); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to right,
+		#ffffff,
+		#6dd5fa,
+		#2980b9
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header {
+	width: 100vw;
+	background-color: #fff;
+}
+
+.title {
+	font-family: "Inconsolata", monospace;
+	margin: 0;
+	color: #000;
+	font-size: 1.5em;
+	font-weight: 400;
+	padding: 10px 12px;
+}
+
+.sub-title-wrapper {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 35%;
+	left: 47%;
+	transform: translate(-30%, -30%);
+}
+
+.sub-heading {
+	color: #fff;
+}
+
+form {
+	width: 400px;
+	height: 136px;
+	background-color: #f6f6f6;
+	margin: 0 auto;
+	border-radius: 12px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	height: 35px;
+	border: none;
+	outline: none;
+}
+
+input:nth-child(2) {
+	background: #6dd5fa;
+	color: white;
+}
+
+input:nth-child(2):hover {
+	cursor: pointer;
+}
+
+.hide {
+	display: none;
+}
+
+#answer {
+	position: fixed;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+
+#answer p::first-letter {
+	text-transform: capitalize;
+}
+
+#answer p {
+	font-weight: bold;
+	font-size: 1.2em;
+}
